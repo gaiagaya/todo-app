@@ -1,0 +1,99 @@
+html{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e3e9ff;
+}
+
+body {
+    max-width: 360px;
+    margin: 1 rem auto;
+}
+
+header {
+    margin-bottom: 1rem;
+    padding: 10px;
+    text-align: center;
+    background-color: #af7eeb;
+    color: white;
+}
+
+h1{
+    margin: 0;
+    font-size: 1.6em;
+}
+
+.new-label {
+    display: none;
+}
+
+.new {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.new-input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    font-size: 1.2em;
+}
+
+.new-button {
+    border: 0;
+    padding: 0 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #ef7eeb;
+    cursor: pointer;
+}
+
+.new-button:hover {
+    background-color: #7e3ece;
+}
+
+.new-button:disabled{
+    background-color: #cccccc;
+}
+
+.items {
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    display: flex;
+    padding: 1rem;
+    background-color: white;
+}
+
+.item-check {
+    margin-right: 1rem;
+}
+
+.item-text {
+    color: #6d748a;
+}
+
+.delete {
+    width: 20px;
+    margin-left: auto;
+    border: 0;
+    color: transparent;
+    background: url(https://cdn.glitch.me/f961eba8-228f-46a7-a1bc-a4b0b7dc17e2%2Fbin.png) no-repeat right;
+    background-size: contain;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.delete:hover {
+    background-image: url(https://cdn.glitch.me/f961eba8-228f-46a7-a1bc-a4b0b7dc17e2%2Fbin2.png);
+}
+
+.item:hover .delete {
+    visibility: visible;
+}
+
+.item-check:checked + .item-text {
+    text-decoration: line-through;
+}
